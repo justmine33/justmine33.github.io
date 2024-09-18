@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="info-pemesanan">
+            <div class="logo">
+                <img src="logo-resto.jpeg" alt="Logo Restoran">
+            </div>
+            <h1>Thank you for the Order!</h1>
+            <p>Terima Kasih telah memesan makanan di restoran kami</p>
+
+            <div class="info-pelanggan">
+                <h2>Customer Information</h2>
+                <p><strong>Customer Name:</strong> Abdullah Azam</p>
+                <p><strong>Shipping Address:</strong> Jl. Merdeka No. 15, Kota Balikpapan</p>
+            </div>
+        </div>
+
+        <div class="item-pesanan">
+            <h2>Items</h2>
+            <div class="item">
+                <img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial">
+                <p>Nasi Goreng Spesial</p>
+                <p>Rp 25.000</p>
+            </div>
+            <div class="item">
+                <img src="es-teh-manis.jpeg" alt="Es Teh Manis">
+                <p>Es Teh Manis</p>
+                <p>Rp 5.000</p>
+            </div>
+
+            <div class="total-harga">
+                <p><strong>Subtotal:</strong> Rp 30.000</p>
+                <p><strong>Tax:</strong> Rp 2.000</p>
+                <p><strong>Total:</strong> Rp 32.000</p>
+            </div>
+
+            <div class="pembayaran">
+                <h3>Metode Pembayaran:</h3>
+                <div class="metode">
+                    <label for="bca" class="metode-pembayaran">
+                        <input type="radio" id="bca" name="payment-method" value="bca">
+                        <img src="logo-bca.jpeg" alt="bca">
+                    </label>
+                    <label for="bri" class="metode-pembayaran">
+                        <input type="radio" id="bri" name="payment-method" value="bri">
+                        <img src="logo-bri.jpeg" alt="bri"> 
+                    </label>
+                    <label for="ovo" class="metode-pembayaran">
+                        <input type="radio" id="ovo" name="payment-method" value="ovo">
+                        <img src="logo-ovo.jpeg" alt="ovo"> 
+                    </label>
+                    <label for="gopay" class="metode-pembayaran">
+                        <input type="radio" id="gopay" name="payment-method" value="gopay">
+                        <img src="logo-gopay.jpeg" alt="gopay"> 
+                    </label>
+                </div>
+            </div>
+            <button class="button">Selesaikan Pemesanan</button>
+        </div>
+    </div>
+
+</body>
+</html>
