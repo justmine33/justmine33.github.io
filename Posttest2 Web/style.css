@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Century;
+    background-color: #fbd3d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff7f0;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.info-pemesanan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    width: 40%;
+}
+
+.item-pesanan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 60%;
+}
+
+h1 {
+    font-size: 2vw;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+    color: cadetblue;
+}
+
+p {
+    font-size: 1vw;
+    margin-bottom: 10px;
+    color: dimgray;
+}
+
+.info-pelanggan {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.item-pesanan {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.item img {
+    width: 8vw;
+    height: auto;
+    border-radius: 5px;
+}
+
+.total-harga {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.total-harga p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.pembayaran {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.metode {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.metode-pembayaran {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.metode-pembayaran img {
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.metode-pembayaran input[type="radio"] {
+    display: none;
+}
+
+.metode-pembayaran input[type="radio"]:checked + img {
+    filter: hue-rotate(180deg) saturate(2) brightness(0.8);
+    border: 3px solid blue;
+}
+
+.metode-pembayaran:hover {
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+.button {
+    background-color:lightcoral;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 1vw;
+    cursor:pointer;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover{
+    background-color: coral;
+    transition: .2s ease-in-out;
+    transition-delay: .3s;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .info-pemesanan, .item-pesanan {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .item img {
+        width: 60px;
+    }
+
+    .metode {
+        flex-direction: row;
+    }
+
+    .metode-pembayaran img {
+        width: 60px; 
+    }
+
+    .button {
+        width: 150px;
+        height: 60px;
+    }
+}
+
+/* Media Queries for Smartphone (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .info-pemesanan, .item-pesanan {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .metode {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metode-pembayaran img {
+        width: 50px; 
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .item img {
+        width: 50px;
+    }
+
+    .button {
+        width: 120px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
