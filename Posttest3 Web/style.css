@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('/image/bg-lightmode.jpeg');
+    background-image: url('https://studio.mrngroup.co/storage/app/media/Prambors/IBG/Rekomendasi%20Parfum%20Lokal%20-%20Prambors%20Ini%20Bisnis%20Gue-20221014162633.jpeg?tr=w-600');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -93,14 +93,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    text-align: center;
-    transition: background-image 0.5s ease, color 0.5s ease;
-}
-
-.dark-mode .hero {
-    background-image: url('/image/bg-darkmode.jpeg');
-    background-size: cover;
-    color: #fff; 
     text-align: center;
 }
 
